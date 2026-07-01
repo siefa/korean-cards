@@ -793,66 +793,42 @@ async function syncWithFirebase() {
     const url = FIREBASE_CONFIG.databaseURL + 'words.json';
 
     try {
-        // 1. Загружаем из Firebase
         const response = await fetch(url);
-        if (!response.ok) throw new Error('Ошибка загрузки из Firebase');
-
         const firebaseData = await response.json();
         const firebaseWords = firebaseData ? Object.values(firebaseData) : [];
 
-        // 2. Если Firebase пустая → отправляем локальные
-        if (firebaseWords.length === 0) {
-            if (words.length === 0) {
-                showToast('Нет слов для синхронизации', 'error');
-                return;
-            }
-            await uploadToFirebase(words);
-            showToast(`✅ Отправлено ${words.length} слов в Firebase`, 'success');
+        if (firebaseWords.length === 0 && words.length === 0) {
+            showToast('Нет слов для синхронизации', 'error');
             return;
         }
 
-        // 3. Объединяем
-        const allWords = [...words, ...firebaseWords];
-        const uniqueWords = allWords.filter((w, i, self) => 
-            i === self.findIndex(t => t.korean === w.korean && t.russian === w.russian)
+        const choice = confirm(
+            `📊 Статистика:\n` +
+            `Локально: ${words.length} слов\n` +
+            `В Firebase: ${firebaseWords.length} слов\n\n` +
+            `Нажми "OK" — ЗАГРУЗИТЬ из Firebase (заменит локальные)\n` +
+            `Нажми "Отмена" — ОТПРАВИТЬ локальные в Firebase`
         );
 
-        // 4. Сохраняем локально
-        words = uniqueWords;
-        saveToStorage();
+        if (choice) {
+            // Загружаем из Firebase
+            words = firebaseWords;
+            saveToStorage();
+            resetShuffle();
+            updateAll();
+            showToast(`✅ Загружено ${words.length} слов из Firebase`, 'success');
+        } else {
+            // Отправляем в Firebase
+            await uploadToFirebase(words);
+            showToast(`✅ Отправлено ${words.length} слов в Firebase`, 'success');
+        }
 
-        // 5. Отправляем в Firebase
-        await uploadToFirebase(words);
-
-        resetShuffle();
-        updateAll();
-        showToast(`✅ Синхронизировано ${words.length} слов`, 'success');
-        
-        firebaseSyncBtn.textContent = '☁️ синхронизировано ✅';
-        firebaseSyncBtn.classList.add('synced');
+        updateSyncStatus(true);
 
     } catch (error) {
-        console.error('Firebase error:', error);
+        console.error('❌ Ошибка синхронизации:', error);
         showToast('❌ Ошибка синхронизации', 'error');
     }
-}
-
-// Функция для отправки данных в Firebase
-async function uploadToFirebase(data) {
-    const url = FIREBASE_CONFIG.databaseURL + 'words.json';
-    const dataToSend = {};
-    data.forEach((word, index) => {
-        dataToSend[index] = word;
-    });
-    
-    const response = await fetch(url, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(dataToSend),
-    });
-    
-    if (!response.ok) throw new Error('Ошибка отправки');
-    return response;
 }
         // =============================================
         // ЭКСПОРТ / ИМПОРТ
