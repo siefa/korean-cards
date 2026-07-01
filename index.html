@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Korean Cards • Study</title>
+
+    <!-- ===== PWA META ===== -->
+    <meta name="theme-color" content="#14181c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Korean Cards">
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIktvcmVhbiBDYXJkcyIsCiAgInNob3J0X25hbWUiOiAiS29yZWFuIENhcmRzIiwKICAiZGVzY3JpcHRpb24iOiAi0KPRh9C40LzQvtC90LrQuCDQutC+0YDQtdC50YHQutC40YUg0YHQvtCy0LAg0YEg0LjQvdGC0LXRgNCy0LDQu9C+0LzRiyIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMTQxODFjIiwKICAidGhlbWVfY29sb3IiOiAiIzE0MTgxYyIsCiAgImljb25zIjogWwogICAgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTEyIDUxMic+PHJlY3Qgd2lkdGg9JzUxMicgaGVpZ2h0PSc1MTInIHJ4PSc5MCcgZmlsbD0nIzE0MTgxYycvPjx0ZXh0IHg9JzI1NicgeT0nMzEwJyBmb250LXNpemU9JzI4MCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1mYW1pbHk9J3NhbnMtc2VyaWYnIGZpbGw9JyNmN2M5NDgnPuCfkYw8L3RleHQ+PC9zdmc+IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sCiAgICB7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWwsPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxOTIgMTkyJz48cmVjdCB3aWR0aD0nMTkyJyBoZWlnaHQ9JzE5Micgcng9JzM2JyBmaWxsPScjMTQxODFjJy8+PHRleHQgeD0nOTYnIHk9JzEyMCcgZm9udC1zaXplPSc5MCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1mYW1pbHk9J3NhbnMtc2VyaWYnIGZpbGw9JyNmN2M5NDgnPuCfkYw8L3RleHQ+PC9zdmc+IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sCiAgICB7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWwsPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNDQgMTQ0Jz48cmVjdCB3aWR0aD0nMTQ0JyBoZWlnaHQ9JzE0NCcgcng9JzI4JyBmaWxsPScjMTQxODFjJy8+PHRleHQgeD0nNzInIHk9JzkwJyBmb250LXNpemU9JzcwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nc2Fucy1zZXJpZicgZmlsbD0nI2Y3Yzk0OCc+4J+RjDwvdGV4dD48L3N2Zz4iLCAic2l6ZXMiOiAiMTQ0eDE0NCIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifSwKICAgIHsic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDk2IDk2Jz48cmVjdCB3aWR0aD0nOTYnIGhlaWdodD0nOTYnIHJ4PScxOCcgZmlsbD0nIzE0MTgxYycvPjx0ZXh0IHg9JzQ4JyB5PSc2MicgZm9udC1zaXplPSc0MCcgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1mYW1pbHk9J3NhbnMtc2VyaWYnIGZpbGw9JyNmN2M5NDgnPuCfkYw8L3RleHQ+PC9zdmc+IiwgInNpemVzIjogIjk2eDk2IiwgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LAogICAgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNzIgNzInPjxyZWN0IHdpZHRoPSc3MicgaGVpZ2h0PSc3Micgcng9JzE0JyBmaWxsPScjMTQxODFjJy8+PHRleHQgeD0nMzYnIHk9JzQ2JyBmb250LXNpemU9JzI4JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nc2Fucy1zZXJpZicgZmlsbD0nI2Y3Yzk0OCc+4J+RjDwvdGV4dD48L3N2Zz4iLCAic2l6ZXMiOiAiNzJ4NzIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sCiAgICB7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWwsPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0OCA0OCc+PHJlY3Qgd2lkdGg9JzQ4JyBoZWlnaHQ9JzQ4JyByeD0nMTAnIGZpbGw9JyMxNDE4MWMnLz48dGV4dCB4PScyNCcgeT0nMzInIGZvbnQtc2l6ZT0nMjAnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtZmFtaWx5PSdzYW5zLXNlcmlmJyBmaWxsPScjZjdjOTQ4Jz7gn5GMPC90ZXh0Pjwvc3ZnPiIsICJzaXplcyI6ICI0OHg0OCIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifQogIF0sCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAic2NvcGUiOiAiZnVsbHNjcmVlbiIsCiAgImNhdGVnb3JpZXMiOiBbImVkdWNhdGlvbiIsICJ1dGlsaXRpZXMiXSwKICAic2hvcnRjdXRzIjogW10sCiAgImxhbmciOiAicnUiCn0=" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='36' fill='%2314181c'/%3E%3Ctext x='96' y='120' font-size='90' text-anchor='middle' font-family='sans-serif' fill='%23f7c948'%3E📚%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%2314181c'/%3E%3Ctext x='24' y='32' font-size='20' text-anchor='middle' font-family='sans-serif' fill='%23f7c948'%3E📚%3C/text%3E%3C/svg%3E">
+
+    <style>
+        /* ----- RESET & GLOBAL ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #0b0d10;
+            color: #eaeef2;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            margin: 0;
+            /* PWA fullscreen safe */
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+
+        .app {
+            max-width: 420px;
+            width: 100%;
+            background: #14181c;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.04);
+            padding: 20px 16px 30px;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        /* ----- ХЕДЕР ----- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #2a3036;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            background: linear-gradient(135deg, #f7e05e, #f9b83a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-badge {
+            background: #2a3036;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #b0c4d9;
+            letter-spacing: 0.2px;
+        }
+
+        .header-badge span {
+            color: #f7e05e;
+            font-weight: 700;
+        }
+
+        /* ----- СТАТИСТИКА ----- */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #1e242a;
+            border-radius: 20px;
+            padding: 10px 6px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #a6b9cf;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .stats div {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .stats strong {
+            color: #eaeef2;
+            font-weight: 600;
+        }
+
+        /* ----- ФОРМА ДОБАВЛЕНИЯ ----- */
+        .add-form {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .add-form input {
+            flex: 1 1 100px;
+            background: #1e242a;
+            border: 1px solid #2f363e;
+            border-radius: 16px;
+            padding: 12px 14px;
+            color: #f0f4f8;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s;
+            min-width: 80px;
+        }
+
+        .add-form input::placeholder {
+            color: #6b7e93;
+            font-weight: 400;
+        }
+
+        .add-form input:focus {
+            border-color: #f7c948;
+            background: #232a31;
+        }
+
+        .add-form button {
+            background: #f7c948;
+            border: none;
+            border-radius: 40px;
+            padding: 0 22px;
+            font-weight: 700;
+            font-size: 15px;
+            color: #0b0d10;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(247, 201, 72, 0.25);
+            letter-spacing: 0.3px;
+        }
+
+        .add-form button:hover {
+            background: #fad65e;
+            transform: scale(0.97);
+            box-shadow: 0 2px 8px rgba(247, 201, 72, 0.4);
+        }
+
+        .add-form button:active {
+            transform: scale(0.93);
+        }
+
+        /* ----- КАРТОЧКА (flashcard) ----- */
+        .card-wrapper {
+            perspective: 1000px;
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+
+        .flashcard {
+            background: #1e242a;
+            border-radius: 28px;
+            padding: 38px 16px;
+            text-align: center;
+            box-shadow: 0 8px 0 #0f1216, 0 12px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #2d343c;
+            transition: 0.25s ease;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            user-select: none;
+        }
+
+        .flashcard:active {
+            transform: scale(0.97);
+        }
+
+        .flashcard .word {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #f2f6fa;
+            line-height: 1.3;
+        }
+
+        .flashcard .translation {
+            font-size: 24px;
+            font-weight: 400;
+            color: #b8ccdd;
+            margin-top: 14px;
+            background: #0f1318;
+            padding: 8px 20px;
+            border-radius: 60px;
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(6px);
+            transition: 0.25s ease;
+            border: 1px solid #2f363e;
+        }
+
+        .flashcard.show-translation .translation {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card-hint {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #5e7489;
+            letter-spacing: 0.5px;
+            background: #131a20;
+            padding: 6px 16px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        /* ----- КНОПКИ "ЗНАЮ / НЕ ЗНАЮ" ----- */
+        .card-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin: 16px 0 20px;
+        }
+
+        .card-actions button {
+            padding: 10px 28px;
+            border: none;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            flex: 1;
+            max-width: 160px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-actions button:active {
+            transform: scale(0.93);
+        }
+
+        .btn-know {
+            background: #2e7d32;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+        }
+
+        .btn-know:hover {
+            background: #388e3c;
+            box-shadow: 0 4px 16px rgba(46, 125, 50, 0.5);
+        }
+
+        .btn-dont-know {
+            background: #c62828;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(198, 40, 40, 0.3);
+        }
+
+        .btn-dont-know:hover {
+            background: #d32f2f;
+            box-shadow: 0 4px 16px rgba(198, 40, 40, 0.5);
+        }
+
+        /* ----- НАВИГАЦИЯ КАРТОЧКИ ----- */
+        .card-nav {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .card-nav button {
+            background: #1e242a;
+            border: 1px solid #2f363e;
+            color: #eaeef2;
+            padding: 8px 20px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s;
+            flex: 1;
+            min-width: 80px;
+            max-width: 140px;
+        }
+
+        .card-nav button:hover {
+            background: #2a323a;
+            border-color: #f7c948;
+        }
+
+        .card-nav button:active {
+            transform: scale(0.95);
+        }
+
+        .card-nav .shuffle-btn {
+            background: #f7c948;
+            color: #0b0d10;
+            border-color: #f7c948;
+            flex: 1.5;
+            max-width: 160px;
+        }
+
+        .card-nav .shuffle-btn:hover {
+            background: #fad65e;
+            border-color: #fad65e;
+        }
+
+        /* ----- КНОПКИ ЭКСПОРТ/ИМПОРТ/FIREBASE/УСТАНОВКА ----- */
+        .data-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin: 12px 0 16px;
+            flex-wrap: wrap;
+        }
+
+        .data-actions button {
+            background: #1e242a;
+            border: 1px solid #2f363e;
+            color: #eaeef2;
+            padding: 6px 16px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .data-actions button:hover {
+            background: #2a323a;
+            border-color: #f7c948;
+        }
+
+        .data-actions button:active {
+            transform: scale(0.95);
+        }
+
+        .data-actions .firebase-btn {
+            background: #f7c948;
+            color: #0b0d10;
+            border-color: #f7c948;
+        }
+
+        .data-actions .firebase-btn:hover {
+            background: #fad65e;
+        }
+
+        .data-actions .firebase-btn.synced {
+            background: #2e7d32;
+            border-color: #2e7d32;
+            color: #fff;
+        }
+
+        .install-btn {
+            background: #2a7de1 !important;
+            border-color: #2a7de1 !important;
+            color: #fff !important;
+            font-weight: 600 !important;
+        }
+
+        .install-btn:hover {
+            background: #3b8bf5 !important;
+            border-color: #3b8bf5 !important;
+        }
+
+        .install-btn.hidden {
+            display: none;
+        }
+
+        /* ----- СПИСОК СЛОВ ----- */
+        .word-list {
+            margin-top: 12px;
+        }
+
+        .list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            color: #889fb5;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .list-header button {
+            background: none;
+            border: none;
+            color: #f75e5e;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 40px;
+            background: #1e242a;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .list-header button:hover {
+            background: #2d1e1e;
+            color: #ff7a7a;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1a2026;
+            padding: 12px 16px;
+            border-radius: 18px;
+            margin-bottom: 8px;
+            border-left: 3px solid #f7c948;
+            transition: 0.15s;
+        }
+
+        .list-item .ko {
+            font-weight: 600;
+            font-size: 18px;
+            color: #eef3f8;
+        }
+
+        .list-item .ru {
+            color: #a6b9cf;
+            font-size: 16px;
+        }
+
+        .list-item .errors-badge {
+            background: #2a1e1e;
+            color: #f75e5e;
+            padding: 2px 10px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0 8px;
+        }
+
+        .list-item .del-btn {
+            background: none;
+            border: none;
+            color: #6b7e93;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0 6px;
+            transition: 0.2s;
+        }
+
+        .list-item .del-btn:hover {
+            color: #f75e5e;
+            transform: scale(1.2);
+        }
+
+        .empty-message {
+            text-align: center;
+            padding: 36px 10px;
+            color: #526675;
+            font-size: 15px;
+            border: 1px dashed #2a3036;
+            border-radius: 28px;
+            margin-top: 8px;
+        }
+
+        .empty-message span {
+            display: block;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .footer-small {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #37424d;
+            text-align: center;
+            border-top: 1px solid #20272e;
+            padding-top: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        /* ----- TOAST ----- */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e242a;
+            padding: 12px 24px;
+            border-radius: 40px;
+            border: 1px solid #2f363e;
+            font-size: 14px;
+            color: #eaeef2;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: 0.3s ease;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 90%;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .toast.success {
+            border-color: #2e7d32;
+        }
+
+        .toast.error {
+            border-color: #c62828;
+        }
+
+        @media (max-width: 450px) {
+            .app {
+                padding: 16px 12px 20px;
+            }
+            .flashcard .word {
+                font-size: 28px;
+            }
+            .flashcard .translation {
+                font-size: 20px;
+            }
+            .add-form input {
+                flex: 1 1 70px;
+            }
+            .card-nav button {
+                font-size: 12px;
+                padding: 6px 12px;
+                min-width: 60px;
+            }
+            .card-actions button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            .data-actions button {
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+        }
+
+        /* ----- UPDATE BANNER ----- */
+        .update-banner {
+            display: none;
+            background: #2a3036;
+            padding: 10px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+            font-size: 14px;
+            color: #eaeef2;
+            border: 1px solid #f7c948;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .update-banner.show {
+            display: flex;
+        }
+
+        .update-banner button {
+            background: #f7c948;
+            border: none;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            color: #0b0d10;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .update-banner button:hover {
+            background: #fad65e;
+        }
+    </style>
+</head>
+<body>
+<div class="app" id="app">
+    <!-- Хедер -->
+    <div class="header">
+        <h1>📚 Korean Cards</h1>
+        <div class="header-badge">🔖 <span id="countDisplay">0</span></div>
+    </div>
+
+    <!-- Баннер обновления -->
+    <div class="update-banner" id="updateBanner">
+        <span>🔄 Доступна новая версия</span>
+        <button id="updateBtn">Обновить</button>
+    </div>
+
+    <!-- Статистика -->
+    <div class="stats">
+        <div>📖 всего <strong id="totalWords">0</strong></div>
+        <div>❌ сложных <strong id="hardWords">0</strong></div>
+        <div>🔄 карточка <strong id="cardIndexDisplay">1</strong>/<span id="cardTotalDisplay">1</span></div>
+    </div>
+
+    <!-- Форма добавления -->
+    <div class="add-form">
+        <input type="text" id="wordInput" placeholder="Корейское слово" autocomplete="off">
+        <input type="text" id="translationInput" placeholder="Перевод" autocomplete="off">
+        <button id="addBtn">+ добавить</button>
+    </div>
+
+    <!-- Карточка -->
+    <div class="card-wrapper" id="cardWrapper">
+        <div class="flashcard" id="flashcard">
+            <div class="word" id="cardWord">안녕</div>
+            <div class="translation" id="cardTranslation">привет</div>
+            <div class="card-hint">👆 нажми, чтобы увидеть перевод</div>
+        </div>
+    </div>
+
+    <!-- Кнопки "знаю / не знаю" -->
+    <div class="card-actions" id="cardActions">
+        <button class="btn-dont-know" id="dontKnowBtn">❌ не знаю</button>
+        <button class="btn-know" id="knowBtn">✅ знаю</button>
+    </div>
+
+    <!-- Навигация карточки -->
+    <div class="card-nav">
+        <button id="prevCardBtn">◀ назад</button>
+        <button id="shuffleBtn" class="shuffle-btn">🎲 перемешать</button>
+        <button id="nextCardBtn">вперёд ▶</button>
+    </div>
+
+    <!-- Экспорт/Импорт/Firebase/Установка -->
+    <div class="data-actions">
+        <button id="exportBtn">📥 экспорт</button>
+        <button id="importBtn">📤 импорт</button>
+        <button id="firebaseSyncBtn" class="firebase-btn">☁️ синхронизировать</button>
+        <button id="installBtn" class="install-btn hidden">📲 установить</button>
+        <input type="file" id="fileInput" accept=".json" style="display:none">
+    </div>
+
+    <!-- Список слов -->
+    <div class="word-list">
+        <div class="list-header">
+            <span>📋 мои слова</span>
+            <button id="clearAllBtn">✕ очистить всё</button>
+        </div>
+        <div id="wordListContainer">
+            <!-- сюда рендерится список -->
+        </div>
+    </div>
+
+    <div class="footer-small">🔥 Firebase • интервальное повторение • PWA</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+    (function() {
+        'use strict';
+
+        // =============================================
+        // 🔥 НАСТРОЙКА FIREBASE (ЗАМЕНИ НА СВОИ ДАННЫЕ)
+        // =============================================
+        const FIREBASE_CONFIG = {
+            databaseURL: 'https://korean-cards-3ea38-default-rtdb.firebaseio.com/'
+        };
+
+        // =============================================
+        // ЭЛЕМЕНТЫ
+        // =============================================
+        const wordInput = document.getElementById('wordInput');
+        const translationInput = document.getElementById('translationInput');
+        const addBtn = document.getElementById('addBtn');
+        const wordListContainer = document.getElementById('wordListContainer');
+        const totalWordsSpan = document.getElementById('totalWords');
+        const hardWordsSpan = document.getElementById('hardWords');
+        const countDisplay = document.getElementById('countDisplay');
+        const cardWord = document.getElementById('cardWord');
+        const cardTranslation = document.getElementById('cardTranslation');
+        const cardIndexDisplay = document.getElementById('cardIndexDisplay');
+        const cardTotalDisplay = document.getElementById('cardTotalDisplay');
+        const flashcard = document.getElementById('flashcard');
+        const clearAllBtn = document.getElementById('clearAllBtn');
+        const prevCardBtn = document.getElementById('prevCardBtn');
+        const nextCardBtn = document.getElementById('nextCardBtn');
+        const shuffleBtn = document.getElementById('shuffleBtn');
+        const knowBtn = document.getElementById('knowBtn');
+        const dontKnowBtn = document.getElementById('dontKnowBtn');
+        const exportBtn = document.getElementById('exportBtn');
+        const importBtn = document.getElementById('importBtn');
+        const fileInput = document.getElementById('fileInput');
+        const firebaseSyncBtn = document.getElementById('firebaseSyncBtn');
+        const installBtn = document.getElementById('installBtn');
+        const updateBanner = document.getElementById('updateBanner');
+        const updateBtn = document.getElementById('updateBtn');
+        const toast = document.getElementById('toast');
+
+        // =============================================
+        // СОСТОЯНИЕ
+        // =============================================
+        let words = [];
+        let currentCardIndex = 0;
+        let shuffledIndices = [];
+        let isShuffled = false;
+
+        // =============================================
+        // TOAST (уведомления)
+        // =============================================
+        let toastTimeout;
+
+        function showToast(message, type = 'info') {
+            toast.textContent = message;
+            toast.className = 'toast show ' + type;
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // =============================================
+        // PWA: INSTALL
+        // =============================================
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.classList.remove('hidden');
+        });
+
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const result = await deferredPrompt.userChoice;
+                if (result.outcome === 'accepted') {
+                    showToast('✅ Приложение установлено!', 'success');
+                } else {
+                    showToast('Установка отменена', 'info');
+                }
+                deferredPrompt = null;
+                installBtn.classList.add('hidden');
+            }
+        });
+
+        // =============================================
+        // PWA: UPDATE
+        // =============================================
+        let newWorker;
+        function checkForUpdates() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.ready.then(registration => {
+                    registration.update();
+                });
+            }
+        }
+
+        // Проверка обновлений каждые 60 секунд
+        setInterval(checkForUpdates, 60000);
+
+        // Слушаем сообщения от SW
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.addEventListener('message', (event) => {
+                if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
+                    updateBanner.classList.add('show');
+                }
+            });
+        }
+
+        updateBtn.addEventListener('click', () => {
+            if (newWorker) {
+                newWorker.postMessage({ type: 'SKIP_WAITING' });
+            }
+            updateBanner.classList.remove('show');
+            window.location.reload();
+        });
+
+        // =============================================
+        // FIREBASE (REST API)
+        // =============================================
+        async function syncWithFirebase() {
+            const url = FIREBASE_CONFIG.databaseURL + 'words.json';
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Ошибка загрузки из Firebase');
+
+                const firebaseData = await response.json();
+
+                if (firebaseData) {
+                    const firebaseWords = Object.values(firebaseData);
+
+                    if (firebaseWords.length > 0) {
+                        const choice = confirm(
+                            `В Firebase найдено ${firebaseWords.length} слов.\n\n` +
+                            'Нажми "OK" — загрузить из Firebase (заменит локальные)\n' +
+                            'Нажми "Отмена" — загрузить локальные в Firebase'
+                        );
+
+                        if (choice) {
+                            words = firebaseWords;
+                            saveToStorage();
+                            resetShuffle();
+                            updateAll();
+                            showToast(`✅ Загружено ${words.length} слов из Firebase`, 'success');
+                            firebaseSyncBtn.textContent = '☁️ синхронизировано ✅';
+                            firebaseSyncBtn.classList.add('synced');
+                            return;
+                        }
+                    }
+                }
+
+                if (words.length === 0) {
+                    showToast('Нет слов для синхронизации', 'error');
+                    return;
+                }
+
+                const dataToSend = {};
+                words.forEach((word, index) => {
+                    dataToSend[index] = word;
+                });
+
+                const putResponse = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(dataToSend),
+                });
+
+                if (!putResponse.ok) throw new Error('Ошибка отправки в Firebase');
+
+                showToast(`✅ Отправлено ${words.length} слов в Firebase`, 'success');
+                firebaseSyncBtn.textContent = '☁️ синхронизировано ✅';
+                firebaseSyncBtn.classList.add('synced');
+
+            } catch (error) {
+                console.error('Firebase error:', error);
+                showToast('❌ Ошибка синхронизации с Firebase', 'error');
+            }
+        }
+
+        // =============================================
+        // ЭКСПОРТ / ИМПОРТ
+        // =============================================
+        function exportWords() {
+            if (words.length === 0) {
+                showToast('Нет слов для экспорта', 'error');
+                return;
+            }
+
+            const data = JSON.stringify(words, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `korean_words_${new Date().toISOString().slice(0,10)}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast(`✅ Экспортировано ${words.length} слов`, 'success');
+        }
+
+        function importWords(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const imported = JSON.parse(e.target.result);
+                    if (!Array.isArray(imported)) {
+                        throw new Error('Неверный формат файла');
+                    }
+
+                    const valid = imported.every(w =>
+                        w.korean && w.russian && w.id !== undefined
+                    );
+
+                    if (!valid) {
+                        throw new Error('Некорректная структура данных');
+                    }
+
+                    const cleaned = imported.map(w => ({
+                        ...w,
+                        errors: w.errors || 0
+                    }));
+
+                    if (confirm(`Найдено ${cleaned.length} слов. Заменить текущие?`)) {
+                        words = cleaned;
+                        saveToStorage();
+                        resetShuffle();
+                        updateAll();
+                        showToast(`✅ Импортировано ${words.length} слов`, 'success');
+                    }
+                } catch (error) {
+                    showToast('❌ Ошибка импорта: ' + error.message, 'error');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // =============================================
+        // ЗАГРУЗКА из localStorage
+        // =============================================
+        function loadFromStorage() {
+            try {
+                const stored = localStorage.getItem('korean_words_data_v2');
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (Array.isArray(parsed)) {
+                        words = parsed;
+                    } else {
+                        words = [];
+                    }
+                } else {
+                    const oldStored = localStorage.getItem('korean_words_data');
+                    if (oldStored) {
+                        const parsed = JSON.parse(oldStored);
+                        if (Array.isArray(parsed)) {
+                            words = parsed.map(w => ({
+                                ...w,
+                                errors: w.errors || 0
+                            }));
+                        }
+                    } else {
+                        words = [
+                            { id: Date.now() + 1, korean: '안녕하세요', russian: 'здравствуйте', errors: 0 },
+                            { id: Date.now() + 2, korean: '감사합니다', russian: 'спасибо', errors: 0 },
+                            { id: Date.now() + 3, korean: '사랑해', russian: 'я люблю тебя', errors: 0 },
+                            { id: Date.now() + 4, korean: '물', russian: 'вода', errors: 0 },
+                        ];
+                    }
+                }
+            } catch (e) {
+                words = [];
+            }
+            if (words.length === 0) {
+                words = [
+                    { id: Date.now() + 10, korean: '안녕', russian: 'привет', errors: 0 },
+                    { id: Date.now() + 11, korean: '고양이', russian: 'кошка', errors: 0 },
+                ];
+            }
+            words = words.map(w => ({
+                ...w,
+                errors: w.errors !== undefined ? w.errors : 0
+            }));
+            saveToStorage();
+            resetShuffle();
+        }
+
+        function saveToStorage() {
+            localStorage.setItem('korean_words_data_v2', JSON.stringify(words));
+        }
+
+        // =============================================
+        // ОСТАЛЬНАЯ ЛОГИКА
+        // =============================================
+        function getPriorityIndices() {
+            const sorted = words.map((w, idx) => ({ idx, errors: w.errors }))
+                .sort((a, b) => b.errors - a.errors);
+
+            const result = [];
+            sorted.forEach(({ idx, errors }) => {
+                const repeats = Math.max(1, errors + 1);
+                for (let i = 0; i < repeats; i++) {
+                    result.push(idx);
+                }
+            });
+            return result;
+        }
+
+        function applyShuffle() {
+            if (words.length === 0) return;
+            const priority = getPriorityIndices();
+            shuffledIndices = shuffleArray([...priority]);
+            isShuffled = true;
+            currentCardIndex = 0;
+            updateAll();
+        }
+
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function resetShuffle() {
+            shuffledIndices = words.map((_, index) => index);
+            isShuffled = false;
+        }
+
+        function getCurrentWordIndex() {
+            if (words.length === 0) return -1;
+            if (isShuffled && shuffledIndices.length > 0) {
+                return shuffledIndices[currentCardIndex % shuffledIndices.length];
+            }
+            return currentCardIndex % words.length;
+        }
+
+        function updateWordStatus(known) {
+            if (words.length === 0) return;
+
+            const wordIndex = getCurrentWordIndex();
+            if (wordIndex === -1 || wordIndex >= words.length) return;
+
+            if (!known) {
+                words[wordIndex].errors = (words[wordIndex].errors || 0) + 1;
+            } else {
+                words[wordIndex].errors = Math.max(0, (words[wordIndex].errors || 0) - 1);
+            }
+
+            saveToStorage();
+
+            if (isShuffled) {
+                const priority = getPriorityIndices();
+                shuffledIndices = shuffleArray([...priority]);
+                if (currentCardIndex >= shuffledIndices.length) {
+                    currentCardIndex = shuffledIndices.length - 1;
+                }
+            }
+
+            nextCard();
+        }
+
+        function renderList() {
+            if (words.length === 0) {
+                wordListContainer.innerHTML = `
+                    <div class="empty-message">
+                        <span>📭</span>
+                        пока нет слов.<br>добавь первые!
+                    </div>
+                `;
+                return;
+            }
+
+            let html = '';
+            words.forEach((item, index) => {
+                const errors = item.errors || 0;
+                const errorBadge = errors > 0 ? `<span class="errors-badge">❌${errors}</span>` : '';
+                html += `
+                    <div class="list-item" data-index="${index}">
+                        <span class="ko">${escapeHtml(item.korean)}</span>
+                        ${errorBadge}
+                        <span class="ru">${escapeHtml(item.russian)}</span>
+                        <button class="del-btn" data-id="${item.id}" title="удалить">✕</button>
+                    </div>
+                `;
+            });
+            wordListContainer.innerHTML = html;
+
+            document.querySelectorAll('.del-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const id = Number(this.getAttribute('data-id'));
+                    deleteWordById(id);
+                });
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function deleteWordById(id) {
+            const indexToRemove = words.findIndex(w => w.id === id);
+            words = words.filter(w => w.id !== id);
+            saveToStorage();
+
+            if (isShuffled) {
+                shuffledIndices = shuffledIndices
+                    .filter(idx => idx !== indexToRemove)
+                    .map(idx => idx > indexToRemove ? idx - 1 : idx);
+            }
+
+            if (words.length === 0) {
+                currentCardIndex = 0;
+                resetShuffle();
+            } else if (currentCardIndex >= (isShuffled ? shuffledIndices.length : words.length)) {
+                currentCardIndex = Math.max(0, (isShuffled ? shuffledIndices.length : words.length) - 1);
+            }
+            updateAll();
+        }
+
+        function clearAllWords() {
+            if (words.length === 0) return;
+            if (confirm('Удалить все слова?')) {
+                words = [];
+                saveToStorage();
+                currentCardIndex = 0;
+                resetShuffle();
+                updateAll();
+                showToast('🗑️ Все слова удалены', 'info');
+            }
+        }
+
+        function addWord() {
+            const korean = wordInput.value.trim();
+            const russian = translationInput.value.trim();
+            if (korean === '' || russian === '') {
+                showToast('Заполни оба поля', 'error');
+                return;
+            }
+
+            const exists = words.some(w => w.korean.toLowerCase() === korean.toLowerCase() && w.russian.toLowerCase() === russian.toLowerCase());
+            if (exists) {
+                showToast('Такое слово уже есть', 'error');
+                return;
+            }
+
+            const newWord = {
+                id: Date.now() + Math.floor(Math.random() * 1000),
+                korean: korean,
+                russian: russian,
+                errors: 0,
+            };
+            words.push(newWord);
+            saveToStorage();
+
+            if (isShuffled) {
+                const priority = getPriorityIndices();
+                shuffledIndices = shuffleArray([...priority]);
+            }
+
+            currentCardIndex = (isShuffled ? shuffledIndices.length : words.length) - 1;
+            if (!isShuffled) resetShuffle();
+
+            wordInput.value = '';
+            translationInput.value = '';
+            wordInput.focus();
+            updateAll();
+            showToast(`➕ Добавлено: ${korean}`, 'success');
+        }
+
+        function renderCard() {
+            if (words.length === 0) {
+                cardWord.textContent = '✨';
+                cardTranslation.textContent = 'добавь слова';
+                flashcard.classList.remove('show-translation');
+                cardIndexDisplay.textContent = '0';
+                cardTotalDisplay.textContent = '0';
+                return;
+            }
+
+            const total = isShuffled ? shuffledIndices.length : words.length;
+            if (currentCardIndex >= total) currentCardIndex = total - 1;
+            if (currentCardIndex < 0) currentCardIndex = 0;
+
+            const wordIndex = getCurrentWordIndex();
+            if (wordIndex === -1 || wordIndex >= words.length) {
+                resetShuffle();
+                currentCardIndex = 0;
+                const fallbackIndex = getCurrentWordIndex();
+                if (fallbackIndex === -1) return;
+                const item = words[fallbackIndex];
+                cardWord.textContent = item.korean;
+                cardTranslation.textContent = item.russian;
+            } else {
+                const item = words[wordIndex];
+                cardWord.textContent = item.korean;
+                cardTranslation.textContent = item.russian;
+            }
+
+            flashcard.classList.remove('show-translation');
+            cardIndexDisplay.textContent = currentCardIndex + 1;
+            cardTotalDisplay.textContent = total;
+
+            const hardCount = words.filter(w => (w.errors || 0) > 0).length;
+            hardWordsSpan.textContent = hardCount;
+        }
+
+        function prevCard() {
+            if (words.length === 0) return;
+            const total = isShuffled ? shuffledIndices.length : words.length;
+            currentCardIndex = (currentCardIndex - 1 + total) % total;
+            renderCard();
+            flashcard.classList.remove('show-translation');
+        }
+
+        function nextCard() {
+            if (words.length === 0) return;
+            const total = isShuffled ? shuffledIndices.length : words.length;
+            currentCardIndex = (currentCardIndex + 1) % total;
+            renderCard();
+            flashcard.classList.remove('show-translation');
+        }
+
+        function updateAll() {
+            renderList();
+            renderCard();
+            totalWordsSpan.textContent = words.length;
+            countDisplay.textContent = words.length;
+            const hardCount = words.filter(w => (w.errors || 0) > 0).length;
+            hardWordsSpan.textContent = hardCount;
+
+            const total = isShuffled ? shuffledIndices.length : words.length;
+            if (words.length > 0) {
+                cardTotalDisplay.textContent = total;
+                cardIndexDisplay.textContent = currentCardIndex + 1;
+            } else {
+                cardTotalDisplay.textContent = '0';
+                cardIndexDisplay.textContent = '0';
+            }
+        }
+
+        // =============================================
+        // ОБРАБОТЧИКИ СОБЫТИЙ
+        // =============================================
+        addBtn.addEventListener('click', addWord);
+
+        wordInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                if (translationInput.value.trim() === '') {
+                    translationInput.focus();
+                } else {
+                    addWord();
+                }
+            }
+        });
+
+        translationInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                addWord();
+            }
+        });
+
+        flashcard.addEventListener('click', function(e) {
+            if (words.length === 0) return;
+            this.classList.toggle('show-translation');
+        });
+
+        knowBtn.addEventListener('click', function() {
+            if (words.length === 0) return;
+            updateWordStatus(true);
+        });
+
+        dontKnowBtn.addEventListener('click', function() {
+            if (words.length === 0) return;
+            updateWordStatus(false);
+        });
+
+        prevCardBtn.addEventListener('click', prevCard);
+        nextCardBtn.addEventListener('click', nextCard);
+
+        shuffleBtn.addEventListener('click', function() {
+            if (words.length < 2) {
+                showToast('Добавь хотя бы 2 слова', 'error');
+                return;
+            }
+            applyShuffle();
+            showToast('🎲 Слова перемешаны с учётом ошибок', 'success');
+        });
+
+        clearAllBtn.addEventListener('click', clearAllWords);
+
+        exportBtn.addEventListener('click', exportWords);
+
+        importBtn.addEventListener('click', function() {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', function(e) {
+            if (this.files && this.files[0]) {
+                importWords(this.files[0]);
+            }
+            this.value = '';
+        });
+
+        firebaseSyncBtn.addEventListener('click', syncWithFirebase);
+
+        // =============================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // =============================================
+        loadFromStorage();
+
+        if (currentCardIndex >= (isShuffled ? shuffledIndices.length : words.length) && words.length > 0) {
+            currentCardIndex = Math.max(0, (isShuffled ? shuffledIndices.length : words.length) - 1);
+        } else if (words.length === 0) {
+            currentCardIndex = 0;
+        }
+
+        updateAll();
+        wordInput.focus();
+
+        window.addEventListener('beforeunload', function() {
+            saveToStorage();
+        });
+
+        // =============================================
+        // РЕГИСТРАЦИЯ SERVICE WORKER
+        // =============================================
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => {
+                    console.log('✅ Service Worker зарегистрирован');
+                    registration.addEventListener('updatefound', () => {
+                        newWorker = registration.installing;
+                        newWorker.addEventListener('statechange', () => {
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                // Новая версия готова
+                                showToast('🔄 Доступно обновление!', 'info');
+                                updateBanner.classList.add('show');
+                            }
+                        });
+                    });
+                })
+                .catch(err => {
+                    console.log('❌ Service Worker регистрация не удалась:', err);
+                });
+        }
+
+        console.log('✅ Korean Cards App v3 — PWA + Firebase + Экспорт/Импорт');
+        console.log('📊 Всего слов:', words.length);
+        console.log('🔥 Firebase URL:', FIREBASE_CONFIG.databaseURL);
+    })();
+</script>
+
+<!-- ============================================= -->
+<!-- SERVICE WORKER (inline registration + sw)      -->
+<!-- ============================================= -->
+<script>
+    // Этот скрипт создаёт sw.js динамически, чтобы всё было в одном файле
+    (function registerSW() {
+        const swCode = `
+// =============================================
+// SERVICE WORKER — Korean Cards PWA
+// =============================================
+
+const CACHE_NAME = 'korean-cards-v4';
+const ASSETS = [
+    './',
+    './index.html'
+];
+
+// Устанавливаем кеш при активации
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                console.log('📦 Кешируем ресурсы');
+                return cache.addAll(ASSETS);
+            })
+            .then(() => self.skipWaiting())
+    );
+});
+
+// Активация — очищаем старые кеши
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(keys => {
+            return Promise.all(
+                keys.filter(key => key !== CACHE_NAME)
+                    .map(key => caches.delete(key))
+            );
+        }).then(() => self.clients.claim())
+    );
+});
+
+// Стратегия: Cache First с обновлением в фоне
+self.addEventListener('fetch', event => {
+    // Не кешируем запросы к Firebase
+    if (event.request.url.includes('firebaseio.com')) {
+        event.respondWith(fetch(event.request));
+        return;
+    }
+
+    // Не кешируем запросы с параметрами (например, для аналитики)
+    if (event.request.url.includes('?')) {
+        event.respondWith(fetch(event.request));
+        return;
+    }
+
+    event.respondWith(
+        caches.match(event.request)
+            .then(cached => {
+                if (cached) {
+                    // Обновляем кеш в фоне
+                    fetch(event.request)
+                        .then(response => {
+                            if (response && response.status === 200) {
+                                caches.open(CACHE_NAME)
+                                    .then(cache => cache.put(event.request, response.clone()));
+                            }
+                        })
+                        .catch(() => {});
+                    return cached;
+                }
+
+                return fetch(event.request)
+                    .then(response => {
+                        if (response && response.status === 200) {
+                            const cloned = response.clone();
+                            caches.open(CACHE_NAME)
+                                .then(cache => cache.put(event.request, cloned));
+                        }
+                        return response;
+                    })
+                    .catch(() => {
+                        // Если нет сети и нет кеша, показываем офлайн-страницу
+                        return caches.match('./index.html');
+                    });
+            })
+    );
+});
+
+// Сообщаем клиентам о новой версии
+self.addEventListener('message', event => {
+    if (event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
+});
+
+// Отправляем сообщение всем клиентам об обновлении
+self.addEventListener('controllerchange', () => {
+    self.clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            client.postMessage({ type: 'UPDATE_AVAILABLE' });
+        });
+    });
+});
+`;
+
+        // Создаём Blob и регистрируем как sw.js
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const url = URL.createObjectURL(blob);
+
+        // Проверяем, не зарегистрирован ли уже SW
+        if ('serviceWorker' in navigator) {
+            // Регистрируем с временным URL
+            // Но лучше использовать статический sw.js
+            // Поэтому мы создадим его через fetch и сохраним в кеш?
+            // Проще: перезаписываем существующий sw.js через fetch
+            // Но из-за CORS не получится. Поэтому используем inline регистрацию.
+            // Вместо этого, просто создадим ссылку на blob.
+            // Но blob URL не работает для Service Worker в некоторых браузерах.
+            // Поэтому используем второй вариант: динамический sw.js через fetch и Cache API.
+            // Но самый простой способ — использовать отдельный sw.js файл.
+            // Поскольку нам нужен один HTML, мы будем использовать inline SW через blob URL
+            // К сожалению, не все браузеры поддерживают blob URL для SW.
+            // Поэтому лучше создать отдельный sw.js файл.
+            // Для демонстрации, мы оставим регистрацию через blob, но с предупреждением.
+            console.log('⚠️ Для Production используйте отдельный sw.js файл');
+        }
+
+        // Регистрация через blob URL
+        try {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register(url)
+                    .then(reg => {
+                        console.log('✅ SW зарегистрирован через blob URL');
+                    })
+                    .catch(err => {
+                        console.log('❌ SW регистрация через blob не удалась:', err);
+                        // Пробуем зарегистрировать по стандартному пути
+                        navigator.serviceWorker.register('sw.js')
+                            .then(reg => console.log('✅ SW зарегистрирован по стандартному пути'))
+                            .catch(e => console.log('❌ SW не зарегистрирован:', e));
+                    });
+            }
+        } catch (e) {
+            console.log('❌ Ошибка регистрации SW:', e);
+        }
+    })();
+</script>
+</body>
+</html>
