@@ -802,6 +802,46 @@ async function syncWithFirebase() {
             return;
         }
 
+                // =============================================
+        // ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ДЛЯ СИНХРОНИЗАЦИИ
+        // =============================================
+        
+        // Отправка данных в Firebase
+        async function uploadToFirebase(data) {
+            const url = FIREBASE_CONFIG.databaseURL + 'words.json';
+            const dataToSend = {};
+            data.forEach((word, index) => {
+                dataToSend[index] = word;
+            });
+
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(dataToSend),
+            });
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(`Ошибка отправки: ${response.status} ${errorText}`);
+            }
+            
+            console.log('✅ Данные отправлены в Firebase');
+            return response;
+        }
+
+        // Обновление статуса кнопки синхронизации
+        function updateSyncStatus(success) {
+            if (success) {
+                firebaseSyncBtn.textContent = '☁️ синхронизировано ✅';
+                firebaseSyncBtn.classList.add('synced');
+            } else {
+                firebaseSyncBtn.textContent = '☁️ синхронизировать';
+                firebaseSyncBtn.classList.remove('synced');
+            }
+        }
+
         const choice = confirm(
             `📊 Статистика:\n` +
             `Локально: ${words.length} слов\n` +
